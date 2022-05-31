@@ -1,0 +1,60 @@
+html {
+    font-size: 10px;
+}
+
+/*  */
+/* LAYOUT */
+/*  */
+
+.saved {
+    display: none;
+}
+
+body.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    height: 100vh;
+}
+
+header.container {
+    grid-area: 4 / 4 / 5 / 10;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+section.top-center {
+    grid-area: 2 / 4 / 3 / 10;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+}
+
+section.output {
+    grid-area: 6 / 2 / 7 / 12;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+}
+
+section.saved {
+    grid-area: 8 / 2 / 12 / 12;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 8rem;
+}
+
+h2 {
+    text-align: center;
+    font-size: 4rem;
+}
+
+p {
+    text-align: center;
+    font-size: 3rem;
+}
